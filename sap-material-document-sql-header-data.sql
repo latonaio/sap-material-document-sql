@@ -1,4 +1,4 @@
-CREATE TABLE `sap-material-document-header`
+CREATE TABLE `sap-material-document-header-data`
 (
   `MaterialDocumentYear`         varchar(4) DEFAULT NULL,
   `MaterialDocument`             varchar(10) DEFAULT NULL,
@@ -10,6 +10,6 @@ CREATE TABLE `sap-material-document-header`
   `MaterialDocumentHeaderText`   varchar(25) DEFAULT NULL,
   `ReferenceDocument`            varchar(16) DEFAULT NULL,
   `GoodsMovementCode`            varchar(2) DEFAULT NULL,
-    PRIMARY KEY (`MaterialDocumentYear`, `MaterialDocument`)
+  PRIMARY KEY (`MaterialDocumentYear`, `MaterialDocument`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
