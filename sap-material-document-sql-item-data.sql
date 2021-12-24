@@ -66,6 +66,6 @@ CREATE TABLE `sap-material-document-item-data`
   `InvtryMgmtReferenceDocument`    varchar(10) DEFAULT NULL,
   `MaterialDocumentPostingType`    varchar(1) DEFAULT NULL,
     PRIMARY KEY (`MaterialDocumentYear`, `MaterialDocument`, `MaterialDocumentItem`),
-    CONSTRAINT (`MaterialDocumentYear_fk`, `MaterialDocument_fk`) FOREIGN KEY (`MaterialDocumentYear`, `MaterialDocument`) REFERENCES `sap-material-document-header-data` (`MaterialDocumentYear`, `MaterialDocument`),
+    CONSTRAINT (`MaterialDocumentYear_fk`, `MaterialDocument_fk`) FOREIGN KEY (`MaterialDocumentYear`, `MaterialDocument`) REFERENCES `sap-material-document-header-data` (`MaterialDocumentYear`, `MaterialDocument`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
