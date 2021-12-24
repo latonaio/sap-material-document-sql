@@ -1,8 +1,8 @@
 CREATE TABLE `sap-material-document-item-data`
 (
-  `MaterialDocumentYear`           varchar(4) DEFAULT NULL,
-  `MaterialDocument`               varchar(10) DEFAULT NULL,
-  `MaterialDocumentItem`           varchar(4) DEFAULT NULL,
+  `MaterialDocumentYear`           varchar(4) NOT NULL,
+  `MaterialDocument`               varchar(10) NOT NULL,
+  `MaterialDocumentItem`           varchar(4) NOT NULL,
   `Material`                       varchar(40) DEFAULT NULL,
   `Plant`                          varchar(4) DEFAULT NULL,
   `StorageLocation`                varchar(4) DEFAULT NULL,

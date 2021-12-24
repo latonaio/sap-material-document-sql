@@ -1,7 +1,7 @@
 CREATE TABLE `sap-material-document-header-data`
 (
-  `MaterialDocumentYear`         varchar(4) DEFAULT NULL,
-  `MaterialDocument`             varchar(10) DEFAULT NULL,
+  `MaterialDocumentYear`         varchar(4) NOT NULL,
+  `MaterialDocument`             varchar(10) NOT NULL,
   `InventoryTransactionType`     varchar(2) DEFAULT NULL,
   `DocumentDate`                 date DEFAULT NULL,
   `PostingDate`                  date DEFAULT NULL,
