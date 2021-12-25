@@ -1,4 +1,4 @@
-CREATE TABLE `sap-material-document-item-data`
+CREATE TABLE `sap_material_document_item__data`
 (
   `MaterialDocumentYear`           varchar(4) NOT NULL,
   `MaterialDocument`               varchar(10) NOT NULL,
@@ -50,8 +50,8 @@ CREATE TABLE `sap-material-document-item-data`
   `IsCompletelyDelivered`          tinyint(1) DEFAULT NULL,
   `MaterialDocumentItemText`       varchar(50) DEFAULT NULL,
   `UnloadingPointName`             varchar(25) DEFAULT NULL,
-  `ShelfLifeExpirationDate`        date DEFAULT NULL,
-  `ManufactureDate`                date DEFAULT NULL,
+  `ShelfLifeExpirationDate`        varchar(80) DEFAULT NULL,
+  `ManufactureDate`                varchar(80) DEFAULT NULL,
   `SerialNumbersAreCreatedAutomly` tinyint(1) DEFAULT NULL,
   `Reservation`                    varchar(10) DEFAULT NULL,
   `ReservationItem`                varchar(4) DEFAULT NULL,
